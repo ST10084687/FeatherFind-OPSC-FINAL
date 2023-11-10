@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+
+
+    </org.osmdroid.views.MapView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="355dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/baseline_settings_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/baseline_sms_24"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:onClick="birdsChat"/>
+
+    <Button
+        android:id="@+id/viewHotspotsButton"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="215dp"
+        android:layout_marginTop="570dp"
+        android:backgroundTint="@color/light_blue"
+        android:text="View Hotspots"
+        android:textColor="@color/navy"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/chewy"
+        android:text="FeatherFind"
+        android:textColor="@color/light_blue"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/showRoutesButton"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="570dp"
+        android:backgroundTint="@color/light_blue"
+        android:text="DIRECTIONS"
+        android:textColor="@color/navy"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+
+
+</RelativeLayout>
+
+<!--
+<Button
+        android:id="@+id/sendLocationButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Send Location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewHotspotsButton"
+        app:layout_constraintBottom_toTopOf="@+id/phoneNumberEditText"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"/>
+
+
+
+    <EditText
+        android:id="@+id/phoneNumberEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+
+        android:layout_marginEnd="16dp"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sendLocationButton"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="19dp"
+        android:onClick="saveObservationScreen"
+        android:text="Save a bird observation"
+        app:layout_constraintBottom_toTopOf="@+id/phoneNumberEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sendLocationButton" />
+        -->

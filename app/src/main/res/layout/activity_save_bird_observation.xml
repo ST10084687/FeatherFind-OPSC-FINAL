@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SaveBirdObservation">
+
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture and identify avian species"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        android:fontFamily="@font/chewy"
+        android:textColor="@color/navy"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/birdNameEditText"
+        android:hint="Bird Name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:layout_width="392dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/textborder"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/navy"/>
+
+    <EditText
+        android:id="@+id/birdSpeciesEditText"
+        android:hint="Bird Species"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:layout_width="392dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/textborder"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/navy"/>
+
+    <Button
+        android:id="@+id/saveObservationButton"
+        android:text="Save Observation"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="170dp"
+        android:backgroundTint="@color/light_blue"
+
+        android:textColor="@color/navy"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck"/>
+
+    <Button
+        android:id="@+id/captureImageButton"
+        android:text="Capture Image"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="@color/light_blue"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="560dp"
+        android:textColor="@color/navy"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck"/>
+
+
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/cameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="230dp"
+        android:adjustViewBounds="true"/>
+    <ImageView
+        android:id="@+id/birdImage"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="230dp"
+        android:adjustViewBounds="true" />
+    <Button
+        android:id="@+id/viewObservationsButton"
+        android:text="View Observations"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="@color/light_blue"
+
+        android:textColor="@color/navy"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="170dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="355dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_nav_menu" />
+</RelativeLayout>

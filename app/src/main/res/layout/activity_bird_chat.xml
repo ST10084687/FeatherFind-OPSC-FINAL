@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/birdbot"
+    tools:context=".BirdChat">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/chewy"
+        android:padding="10dp"
+        android:text="Chat with our bird specialist"
+        android:textColor="@color/navy"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="398dp"
+        android:layout_height="534dp"
+        android:layout_above="@+id/idTILQuery"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="6dp"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
+
+            <!-- Text view for displaying question -->
+            <TextView
+                android:id="@+id/idTVQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:padding="4dp"
+                android:textAlignment="center"
+                android:textColor="@color/light_blue"
+                android:textSize="20dp" />
+
+            <!-- Text view for displaying response -->
+            <TextView
+                android:id="@+id/txtResponse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:padding="4dp"
+                android:textAlignment="center"
+                android:textColor="@color/navy"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Text field for asking a question -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/idTILQuery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:hint="Ask a question!"
+        android:padding="5dp"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/navy">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:drawableTint="@color/white"
+            android:ems="10"
+            android:imeOptions="actionSend"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+</RelativeLayout>

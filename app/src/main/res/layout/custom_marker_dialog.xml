@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/popup">
+
+        <TextView
+            android:id="@+id/locationNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:fontFamily="@font/chewy"
+            android:textColor="@color/light_blue"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/noteEditText"
+            android:layout_width="257dp"
+            android:layout_height="126dp"
+            android:layout_marginLeft="47dp"
+            android:layout_marginTop="70dp"
+            android:hint="Add a note"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/saveNoteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="122dp"
+            android:textColor="@color/navy"
+            android:textStyle="bold"
+            android:text="Save Note" />
+
+        <TextView
+            android:id="@+id/displayNoteTextView"
+            android:layout_width="257dp"
+            android:layout_height="300dp"
+            android:layout_marginLeft="47dp"
+
+            android:text="" />
+    </LinearLayout>
+</ScrollView>

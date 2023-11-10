@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">FeatherFind3</string>
+    <string name="title_activity_about_us">AboutUs</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="already_a_featherfind_member">Already a FeatherFind Member?</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="sign_up2">Sign up</string>
+    <string name="or">OR</string>
+    <string name="sign_up_with_google">Sign up with Google</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="bird_name">Bird Name</string>
+    <string name="bird_species">Bird Species</string>
+    <string name="save_observation">Save Observation</string>
+
+
+</resources>

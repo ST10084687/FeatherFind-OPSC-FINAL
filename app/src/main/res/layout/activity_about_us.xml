@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs">
+
+
+
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="206dp"
+            app:srcCompat="@drawable/birdfone" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="221dp"
+            android:layout_height="181dp"
+            android:layout_marginLeft="5dp"
+
+            android:layout_marginTop="215dp"
+            android:gravity="center"
+            android:text="FeatherFind, the cutting-edge bird tracker app, is an indispensable companion for both amateur bird enthusiasts and seasoned ornithologists alike. With its advanced features and user-friendly interface, FeatherFind revolutionizes the way you observe and learn about avian species. Offering real-time bird identification through an intelligent image recognition system, this app transforms your smartphone into a powerful tool for identifying and cataloging birds on the go."
+            android:textAlignment="center"
+            android:textColor="@color/navy"
+            android:textSize="11dp"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="180dp"
+            android:layout_height="122dp"
+            android:layout_marginLeft="228dp"
+            android:layout_marginTop="240dp"
+            app:srcCompat="@drawable/birdftwo" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="210dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/birdfthree"
+            android:layout_marginTop="400dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="172dp"
+            android:layout_height="207dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="380dp"
+            android:gravity="center"
+            android:text="FeatherFind, the cutting-edge bird tracker app, is an indispensable companion for both amateur bird enthusiasts and seasoned ornithologists alike. With its advanced features and user-friendly interface, FeatherFind revolutionizes the way you observe and learn about avian species. Offering real-time bird identification through an intelligent image recognition system, this app transforms your smartphone into a powerful tool for identifying and cataloging birds on the go."
+            android:textAlignment="center"
+            android:textColor="@color/navy"
+            android:textSize="11dp"
+            tools:ignore="TextSizeCheck" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="355dp"
+            android:layout_height="53dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="580dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="13dp"
+            android:background="@drawable/bottom_background"
+            android:elevation="2dp"
+            app:itemIconSize="30dp"
+            app:itemIconTint="@drawable/item_selector"
+            app:itemRippleColor="@android:color/transparent"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/bottom_nav_menu" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

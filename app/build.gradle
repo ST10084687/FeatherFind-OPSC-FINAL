@@ -1,0 +1,108 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.featherfind3'
+    compileSdk 34
+
+    
+    defaultConfig {
+        applicationId 'com.example.featherfind3'
+        minSdk 27
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+
+    android {
+
+        viewBinding {
+            enabled = true
+        }
+    }
+
+
+
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.2'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.7.4'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.7.4'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.9.0'
+    implementation 'com.google.firebase:firebase-auth-ktx:22.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+
+    implementation "androidx.camera:camera-camera2:1.2.3"
+    implementation "androidx.camera:camera-lifecycle:1.2.3"
+    implementation "androidx.camera:camera-view:1.4.0-alpha01"
+    implementation "androidx.camera:camera-core:1.2.3"
+
+
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.25'
+
+    implementation 'com.google.firebase:firebase-storage-ktx:20.2.1'
+
+
+    //osm
+    implementation 'org.osmdroid:osmdroid-android:6.1.16'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+
+    implementation 'org.osmdroid:osmdroid-wms:6.1.2'
+    //implementation 'com.github.MKergall:osmbonuspack:6.1.10'
+
+    //including using JitPack:
+    implementation 'com.github.MKergall:osmbonuspack:6.9.0'
+    implementation 'com.firebaseui:firebase-ui-firestore:8.0.2'
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0' // Use the latest version
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+
+    implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.2")
+
+    implementation platform('com.google.firebase:firebase-bom:31.5.0')
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.android.gms:play-services-auth:20.7.0'
+
+
+    implementation 'com.google.code.gson:gson:2.9.1'
+}
+
+
+
+

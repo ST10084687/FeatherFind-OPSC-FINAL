@@ -1,0 +1,54 @@
+[
+  {
+    "species_code": "mareag1",
+    "common_name": "Martial Eagle",
+    "scientific_name": "Polemaetus bellicosus",
+    "prediction_year": 2021,
+    "region_type": "country",
+    "region_code": "AGO",
+    "region_name": "Angola",
+    "season": "year_round",
+    "start_date": "2021-01-04",
+    "end_date": "2021-12-28",
+    "abundance_mean": 0.0037,
+    "total_pop_percent": 0.0392,
+    "range_percent_occupied": 0.1533,
+    "range_total_percent": 0.0459,
+    "range_days_occupation": 365
+  },
+  {
+    "species_code": "brnowl",
+    "common_name": "Barn Owl",
+    "scientific_name": "Tyto alba",
+    "prediction_year": 2021,
+    "region_type": "country",
+    "region_code": "AFG",
+    "region_name": "Afghanistan",
+    "season": "year_round",
+    "start_date": "2021-01-04",
+    "end_date": "2021-12-28",
+    "abundance_mean": 0,
+    "total_pop_percent": 0.0896,
+    "range_percent_occupied": 0.0016,
+    "range_total_percent": 0.0562,
+    "range_days_occupation": 365
+  },
+  {
+    "species_code": "rocpig",
+    "common_name": "Rock Pigeon",
+    "scientific_name": "Columba livia",
+    "prediction_year": 2021,
+    "region_type": "country",
+    "region_code": "ABW",
+    "region_name": "Aruba",
+    "season": "year_round",
+    "start_date": "2021-01-04",
+    "end_date": "2021-12-28",
+    "abundance_mean": 0.2221,
+    "total_pop_percent": 0,
+    "range_percent_occupied": 0.2553,
+    "range_total_percent": 0,
+    "range_days_occupation": 365
+  }
+
+]

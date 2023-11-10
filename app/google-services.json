@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "184334437340",
+    "firebase_url": "https://featherfind3-default-rtdb.firebaseio.com",
+    "project_id": "featherfind3",
+    "storage_bucket": "featherfind3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184334437340:android:37ea1714ca58ccae47dd19",
+        "android_client_info": {
+          "package_name": "com.example.featherfind3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "184334437340-vq2g62frbt7m18iqstv7ivtlgl5s4493.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdyvFl0Mr5ta0QOT9wm6NQJUrM0alxRM4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "184334437340-vq2g62frbt7m18iqstv7ivtlgl5s4493.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

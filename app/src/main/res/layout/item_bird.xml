@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="@color/navy"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <TextView
+        android:id="@+id/speciesCodeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Species Code: "
+        android:layout_marginStart="3dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/commonNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Common Name: "
+        android:layout_marginStart="3dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/scientificNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scientific Name: "
+        android:layout_marginStart="3dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/predictionYearTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prediction Year: "
+        android:layout_marginStart="3dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/regionTypeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Region Type: "
+        android:textStyle="bold"
+        android:layout_marginStart="3dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/regionCodeTextView"
+        android:layout_width="match_parent"
+        android:layout_marginStart="3dp"
+        android:layout_height="wrap_content"
+        android:text="Region Code: "
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/regionNameTextView"
+        android:layout_width="match_parent"
+        android:layout_marginStart="3dp"
+        android:layout_height="wrap_content"
+        android:text="Region Name: "
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/seasonTextView"
+        android:layout_width="match_parent"
+        android:layout_marginStart="3dp"
+        android:layout_height="wrap_content"
+        android:text="Season: "
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/startDateTextView"
+        android:layout_width="match_parent"
+        android:layout_marginStart="3dp"
+        android:layout_height="wrap_content"
+        android:text="Start Date: "
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/endDateTextView"
+        android:layout_width="match_parent"
+        android:layout_marginStart="3dp"
+        android:layout_height="wrap_content"
+        android:text="End Date: "
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/abundanceMeanTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Abundance Mean: "
+        android:layout_marginStart="3dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/totalPopPercentTextView"
+        android:layout_width="match_parent"
+        android:layout_marginStart="3dp"
+        android:layout_height="wrap_content"
+        android:text="Total Pop Percentage: "
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/rangePercentOccupiedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Range Percent Occupied: "
+        android:textStyle="bold"
+        android:layout_marginStart="3dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/rangeTotalPercentTextView"
+        android:layout_width="match_parent"
+        android:layout_marginStart="3dp"
+        android:layout_height="wrap_content"
+        android:text="Total Percent: "
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/rangeDaysOccupationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="3dp"
+                android:text="Range Days Occupied: "
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
